@@ -2,7 +2,7 @@
 Used for A Cloud Security Ninja LLC Windows Docker Image
 
 
-# - How to Test Image
+# How to Test Image Locally
 
 - Run the following Commands
 
