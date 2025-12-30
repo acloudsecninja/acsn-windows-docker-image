@@ -4,7 +4,7 @@ Used for A Cloud Security Ninja LLC Windows Docker Image
 
 # How to Test Image Locally
 
-- Run the following Commands
+Run the following Commands to create a windows GUI within Docker Desktop and your browser using QEMU - noVNC
 
 1. docker system prune --all --force
 
