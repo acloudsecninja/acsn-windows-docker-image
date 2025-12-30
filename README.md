@@ -6,9 +6,15 @@ Used for A Cloud Security Ninja LLC Windows Docker Image
 
 Run the following Commands to create a windows GUI within Docker Desktop and your browser using QEMU - noVNC
 
-1. docker system prune --all --force
+1. Run this command below
+```bash
+docker system prune --all --force
+```
 
-2. docker compose up -d
+2. Run this command below
+```bash
+docker compose up -d
+```
 
 3.  Once it says started then you can go into Docker Desktop and see that the container is downloading Windows 10 from Microsoft. You should see a percentage and it may take up to 10 minutes to download. It will make a local windows folder that holds the ISO and information tied to the container. Please keep this while you are using it ,but do not upload to the github repos as its too large. I have this ignored already using .gitignore method. If you delete though you will need to re configure everything. 
 
