@@ -26,7 +26,7 @@ docker compose up -d
 
 6. Once installed you can stop and start the windows machine from within the Docker Desktop Containers Section. 
 
-7. At this point as long as you have the /windows folder locally it will keep your windows docker container information and can be used later.
+7. At this point as long as you have the /windows folder locally it will keep your windows docker container information and can be used later. If you run into problems you may need to delete the /windows folder and it will redownload everything again.
 
 
 
