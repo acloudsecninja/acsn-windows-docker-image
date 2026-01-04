@@ -28,12 +28,6 @@ docker compose up -d
 
 7. At this point as long as you have the /windows folder locally it will keep your windows docker container information and can be used later. If you run into problems you may need to delete the /windows folder and it will redownload everything again.
 
-8. You will need to add a static route on the docker container directly in windows using powershell as admin. The command is.
-
-```bash
-route add 172.19.0.0 MASK 255.255.255.0 172.19.0.1
-```
-
 8. At this point the Docker Image is installed and ready for use!
 
 ** Default Container Information **
