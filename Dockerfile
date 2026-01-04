@@ -38,9 +38,10 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 3389 8006
 
+# Adjust settings below to fit your host machine and its needs
 ENV VERSION="10"
-ENV RAM_SIZE="10G"
-ENV CPU_CORES="4"
-ENV DISK_SIZE="64G"
+ENV RAM_SIZE="4G"
+ENV CPU_CORES="1"
+ENV DISK_SIZE="25G"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
