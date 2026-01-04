@@ -17,3 +17,14 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
+    networks:
+      custom_net:
+        ipv4_address: 172.30.0.3  # Assign a specific IP within the network
+
+networks:
+  custom_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
+          gateway: 172.30.0.1
