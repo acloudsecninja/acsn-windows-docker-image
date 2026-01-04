@@ -1,3 +1,5 @@
+version: '3.8'  # Specify the version
+
 services:
   windows:
     image: dockurr/windows
@@ -15,5 +17,3 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
-    restart: always
-    stop_grace_period: 2m
