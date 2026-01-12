@@ -6,8 +6,8 @@ services:
     container_name: windows
     environment:
       VERSION: "10"
+      KVM: "N"  # Disable KVM acceleration
     devices:
-      - /dev/kvm
       - /dev/net/tun
     cap_add:
       - NET_ADMIN
