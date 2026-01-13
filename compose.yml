@@ -6,7 +6,6 @@ services:
       VERSION: "10e"
       KVM: "N"  # Disable KVM acceleration
     devices:
-      - /dev/kvm
       - /dev/net/tun
     cap_add:
       - NET_ADMIN
