@@ -39,9 +39,9 @@ VOLUME /storage
 EXPOSE 3389 8006
 
 # Adjust settings below to fit your host machine and its needs. These below seem to be the most stable.
-ENV VERSION="10"
+ENV VERSION="10e"
 ENV RAM_SIZE="8G"
-ENV CPU_CORES="4"
+ENV CPU_CORES="1"
 ENV DISK_SIZE="40G"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]

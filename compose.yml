@@ -4,7 +4,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "10"
+      VERSION: "10e"
       KVM: "N"  # Disable KVM acceleration
     devices:
       - /dev/net/tun
