@@ -1,10 +1,10 @@
+version: '3.8' 
 services:
   windows:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "11"
-      KVM: "N"
+      VERSION: "10"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -16,6 +16,14 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
-    restart: always
-    stop_grace_period: 2m
-    privileged: true
+    networks:
+      custom_net:
+        ipv4_address: 172.30.0.3  # Assign a specific IP within the network
+
+networks:
+  custom_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
+          gateway: 172.30.0.1
