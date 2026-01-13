@@ -4,9 +4,9 @@ services:
     container_name: windows
     environment:
       VERSION: "11"
-    devices:
-      - /dev/kvm
-      - /dev/net/tun
+      KVM: "N"
+      devices:
+        -/dev/kvm
     cap_add:
       - NET_ADMIN
     ports:
